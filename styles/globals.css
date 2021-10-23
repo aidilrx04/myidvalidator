@@ -1,9 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    scroll-behavior: smooth;
+    background: whitesmoke;
 }
 
 a {
@@ -13,4 +19,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.link
+{
+  @apply underline text-black transition-all
+         hover:text-gray-600;
 }
